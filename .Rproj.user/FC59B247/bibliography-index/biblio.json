@@ -1,0 +1,205 @@
+{
+    "sources": [
+        {
+            "DOI": "10.1111/j.1468-4446.2010.01310.x",
+            "ISSN": "0007-1315, 1468-4446",
+            "abstract": "Abstract Social mobility has become a topic of central political concern. In political and also media circles it is widely believed that in Britain today mobility is in decline. However, this belief appears to be based on a single piece of research by economists that is in fact concerned with intergenerational income mobility: specifically, with the relation between family income and children’s later earnings. Research by sociologists using the same data sources – the British birth cohort studies of 1958 and 1970 – but focusing on intergenerational class mobility does not reveal a decline either in total mobility rates or in underlying relative rates. The paper investigates these divergent findings. We show that they do not result from the use of different subsets of the data or of different analytical techniques. Instead, given the more stable and generally less fluid class mobility regime, it is the high level of income mobility of the 1958 cohort, rather than the lower level of the 1970 cohort, that is chiefly in need of explanation. Further analyses – including ones of the relative influence of parental class and of family income on children’s educational attainment – suggest that the economists’ finding of declining mobility between the two cohorts may stem, in part at least, from the fact that the family income variable for the 1958 cohort provides a less adequate measure of “permanent income” than does that for the 1970 cohort. But, in any event, it would appear that the class mobility regime more fully captures the continuity in economic advantage and disadvantage that persists across generations.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2024,
+                        3,
+                        22
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Erikson",
+                    "given": "Robert"
+                },
+                {
+                    "family": "Goldthorpe",
+                    "given": "John H."
+                }
+            ],
+            "container-title": "The British Journal of Sociology",
+            "id": "eriksonHasSocialMobility2010",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2010,
+                        6
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "211-230",
+            "title": "Has social mobility in Britain decreased? Reconciling divergent findings on income and class mobility",
+            "title-short": "Has social mobility in Britain decreased?",
+            "type": "article-journal",
+            "volume": "61"
+        },
+        {
+            "DOI": "10.1016/j.rssm.2015.01.003",
+            "abstract": "Abstract In recent years much research has been concerned with the patterns of association that exist between individuals’ class origins, their educational attainment, and their eventual class destinations – the “OED triangle”. In particular, interest has focused on the possible role of educational expansion and reform in weakening the net association between class origins and destinations or, that is, increasing social fluidity, and thus countering other tendencies, such as increasing inequalities of condition, likely to reduce fluidity. In this paper we examine trends in the OED triangle in Britain on the basis of data from three successive birth cohort studies. We advance on previous research in measuring individuals’ educational attainment not only in absolute but also in relative terms – i.e. in this latter respect treating education as a “positional” good. We show that measuring education in these two different ways leads to significantly differing results. In general, when education is measured in relative terms, associations within the OED triangle show a greater stability over time.",
+            "annote": "MAG ID: 1963920577",
+            "author": [
+                {
+                    "literal": "Erzsébet Bukodi"
+                },
+                {
+                    "family": "Bukodi",
+                    "given": "Erzsébet"
+                },
+                {
+                    "literal": "John H. Goldthorpe"
+                },
+                {
+                    "family": "Goldthorpe",
+                    "given": "John H."
+                }
+            ],
+            "container-title": "Research in Social Stratification and Mobility",
+            "id": "erzsebetbukodiEducationalAttainmentRelative2016",
+            "issue": "43",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        3
+                    ]
+                ]
+            },
+            "page": "5-15",
+            "title": "Educational attainment - relative or absolute - as a mediator of intergenerational class mobility in Britain",
+            "type": "article-journal",
+            "volume": "43"
+        },
+        {
+            "DOI": "10.1111/1468-4446.12096",
+            "PMID": "25339318",
+            "abstract": "Social mobility is now a matter of greater political concern in Britain than at any time previously. However, the data available for the determination of mobility trends are less adequate today than two or three decades ago. It is widely believed in political and in media circles that social mobility is in decline. But the evidence so far available from sociological research, focused on intergenerational class mobility, is not supportive of this view. We present results based on a newly-constructed dataset covering four birth cohorts that provides improved data for the study of trends in class mobility and that also allows analyses to move from the twentieth into the twenty-first century. These results confirm that there has been no decline in mobility, whether considered in absolute or relative terms. In the case of women, there is in fact evidence of mobility increasing. However, the better quality and extended range of our data enable us to identify other “mobility problems” than the supposed decline. Among the members of successive cohorts, the experience of absolute upward mobility is becoming less common and that of absolute downward mobility more common; and class-linked inequalities in relative chances of mobility and immobility appear wider than previously thought.",
+            "annote": "MAG ID: 1487602989",
+            "author": [
+                {
+                    "literal": "Erzsébet Bukodi"
+                },
+                {
+                    "family": "Bukodi",
+                    "given": "Erzsébet"
+                },
+                {
+                    "literal": "John H. Goldthorpe"
+                },
+                {
+                    "family": "Goldthorpe",
+                    "given": "John H."
+                },
+                {
+                    "literal": "John H. Goldthorpe"
+                },
+                {
+                    "literal": "Lorraine Waller"
+                },
+                {
+                    "family": "Waller",
+                    "given": "Lorraine"
+                },
+                {
+                    "literal": "Jouni Kuha"
+                },
+                {
+                    "family": "Kuha",
+                    "given": "Jouni"
+                }
+            ],
+            "container-title": "British Journal of Sociology",
+            "id": "erzsebetbukodiMobilityProblemBritain2015",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        3
+                    ]
+                ]
+            },
+            "page": "93-117",
+            "title": "The mobility problem in Britain: New findings from the analysis of birth cohort data.",
+            "title-short": "The mobility problem in Britain",
+            "type": "article-journal",
+            "volume": "66"
+        },
+        {
+            "DOI": "10.1093/0199258457.003.0008",
+            "abstract": "Abstract Analyses trends in intergenerational class mobility in Britain between the early 1970s and the early 1990s on the basis of data from the General Household Survey. Over this period there was little change in total mobility rates. Rates of upward mobility, if anything, fell while rates of downward mobility rose–in contrast to the situation in the middle decades of the twentieth century when rising rates of upward mobility were the salient feature. However, there is continuity in that relative rates of mobility, indicating the level of social fluidity, remain little altered. Education plays a major part in mediating class mobility but its influence is now tending to decrease rather than increase, and individuals’ class origins still have a significant independent effect on their class destinations.",
+            "annote": "MAG ID: 2480896637",
+            "author": [
+                {
+                    "literal": "John H. Goldthorpe"
+                },
+                {
+                    "family": "Goldthorpe",
+                    "given": "John H."
+                },
+                {
+                    "literal": "John H. Goldthorpe"
+                },
+                {
+                    "family": "Goldthorpe",
+                    "given": "John H."
+                }
+            ],
+            "id": "johnh.goldthorpeTrendsIntergenerationalClass2004",
+            "issued": {
+                "date-parts": [
+                    [
+                        2004,
+                        8
+                    ]
+                ]
+            },
+            "page": "195-224",
+            "title": "Trends in Intergenerational Class Mobility in Britain in the Late Twentieth Century",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1177/0038038584018004003",
+            "abstract": "An increased interest in the social class position of women has followed the increased labour force participation of married women. But if more than one member of a family is assigned a class position independently of the other members, the two basic factors of class position, according to Lockwood, work situation and market situation, do not necessarily coincide, since the work situation relates uniquely to the individual, while the market situation refers to the family or household. It is suggested that work position, based on the occupations of individuals, should be used as an indicator of the work situation, and that class position, based on information about the occupations of those family members who carry the economic responsibility of the household, should be used as the indicator of the market situation.A way for ascribing a class position to families, and thereby to family members, is developed. It utilizes the work positions of both spouses and is based on an order of dominance, where occupati...",
+            "annote": "MAG ID: 2021699205",
+            "author": [
+                {
+                    "literal": "Robert S. Erikson"
+                },
+                {
+                    "literal": "Robert Erikson"
+                },
+                {
+                    "literal": "Robert Erikson"
+                },
+                {
+                    "family": "Erikson",
+                    "given": "Robert"
+                }
+            ],
+            "container-title": "Sociology",
+            "id": "roberts.eriksonSocialClassMen1984",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        1984,
+                        11
+                    ]
+                ]
+            },
+            "page": "500-514",
+            "title": "Social Class of Men, Women and Families",
+            "type": "article-journal",
+            "volume": "18"
+        }
+    ],
+    "project_biblios": []
+}

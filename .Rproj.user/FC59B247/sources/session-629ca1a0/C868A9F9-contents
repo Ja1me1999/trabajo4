@@ -1,0 +1,131 @@
+---
+title: "Trabajo2"
+format: html
+editor: visual
+bibliography: movilidad.bib
+link-citations: true 
+---
+
+## Educacion y Movilidad social
+
+Nivel Educativo y Movilidad Social Para la sociedad moderna y la sociología actual la movilidad social surge como una problemática social y política esencial para comprender la realidad practica de los sujetos sociales respecto a sus condiciones de clase. La clase se constituye de un sin fin de variables sociales como los pueden ser, la cantidad de integrantes del hogar, el sexo, el género, la edad, el ingreso del hogar, la educación, etc. Todas estas variables pertenecen a la composición de la clase social las que pueden variar dependiendo de la sociedad que se encuentre estudiando.
+
+Para esta investigación nos centraremos en describir que es lo que está ocurriendo con las clases sociales respecto a la capacidad de los individuos para poder ascender o descender entre las diferentes clases sociales, sin embargo las variables que puedan tener relación con la movilidad son variadas como antes mencionado por lo que buscaremos establecer la relación entre "Nivel educativo" y su influencia para la capacidad de poder ejercer la movilidad social, es decir haremos un análisis respecto a la capacidad agencial del nivel educativo para poder influir o no en la movilidad social. La movilidad social que se tratara en esta investigación tendrá una perspectiva de carácter intergeneracional, es decir que se hablara de movilidad social comparando la clase social a la que se pueda pertenecer entre generaciones para asi poder observar si la movilidad social es ascendente, descendente o si esta se mantiene a través del tiempo.
+
+La clase social es un concepto que puesto en el largo tiempo histórico ha sido víctima de distintas transformaciones como bien se señala en [@erzsebetbukodiMobilityProblemBritain2015] las cuales han presenciado el fenómeno de la movilidad social como bien se puede ver en [@eriksonHasSocialMobility2010] propias del paso del tiempo y por supuesto del tipo de sociedad en que nos encontremos. En la actualidad sin duda el concepto de clase es un atributo propio de cada uno de los individuos, ninguno de nosotros es ajeno a dicho concepto, como consecuencia para la sociología el problema de la movilidad social resulta ser de mucho interés, puesto que esta problemática permite identificar una realidad generalizada respecto a la situación de clase en cada individuo. Según John Goldthrope [@johnh.goldthorpeTrendsIntergenerationalClass2004] por lo que es relevante que para la sociología y en particular en esta investigación observemos diferentes variables como la "educación" para poder observar la movilidad social.
+
+En esta investigación buscaremos reconocer y caracterizar la movilidad social, con el fin de identificar como es la movilidad social en la actualidad si es que la hay o no y que efectos pueda tener para la sociedad la presencia o ausencia de esta, asi mismo estableceremos la relevancia del nivel educativo como herramienta necesaria para poder ascender o descender entre las clases sociales dado la relevancia de esta variable según [@erzsebetbukodiEducationalAttainmentRelative2016]
+
+Como hipótesis de investigación se ha planteado la siguiente afirmación, la educación como herramienta social para poder ascender o descender entre las clases sociales posee una relevancia sustancial entre los sectores medios y bajos.
+
+## Seleccion de variables
+
+Para trabajar en el analisis se ha decidio utilizar la encuesta de caracterizacion economica (CASEN) del año 2006 para poder hondar en los primeros datos de dicha epoca.
+
+Las variables seleccionadas para esta investigacion se han delimitado a las siguientes (sexo, edad, e8t, r_15) puesto que se pudo construir informacion valiosa respecto a la investigacion con estas variables.
+
+**Sexo**: Esta variable dicotomica se refiere al sexo de las observaciones del estudio, distinguiendolo entre mujer o hombre. La inclusión de esta variable nos permite examinar diferencias o similitudes entre hombres y mujeres en relación ccon las demas variable seleccionadas
+
+**Edad**: S e ha decidido utilizar la variable de edad para poder establecer distintos rangos etarios (Hombre adulto, Mujer adulta, Mujer mayor, Hombre Mayor) asi establecer comparacion en funcion de los valores que nos entrega esta variable.Por lo tanto, incluir esta variable nos permite explorar cómo diferentes grupos de edad pueden responder o comportarse de manera distinta en relación con nuestras variables de interés.
+
+**e8t**: Esta variable representa el nivel educativo logrado por aquellas personas que respondieron la encuesta, sin embargo se ha decidido para el objetivo de este analisis segmentar los niveles educativos entre Educacion basica completa, Educacion Media, Educacion superior completa, Educacion superior incompleta y Postgrado
+
+r_15: Esta variable nos ayudara a delimitar nuestro analisis unicamente para las observaciones tomadas en la region metropolitana, reduciendo asi el nivel de observaciones y permitiendonos agilizar nuestro analisis.
+
+ingreso: Con esta variable buscaremos esclarecer la capacidad de movilidad social respecto del ingreso de la persona encuestada.
+
+Con esta seleccion de variables se buscara establecer la existencia o no de la movilidad social en funcion del nivel educativo que las personas presenten y el ingreso que estas puedan percibir.
+
+### Procesamiento de datos.
+
+```{r}
+
+# Limpiar entorno --------------------------------------------------------------
+
+rm(list = ls())
+
+# Cargar paquetes --------------------------------------------------------------
+
+pacman::p_load(tidyverse, sjmisc, sjPlot, ggplot2)
+
+# Cargar datos -----------------------------------------------------------------
+
+datos_proc = readRDS("Output/casen2006.rds")
+
+
+
+```
+
+### Tabla 1.1
+
+Acontinuacion expondremos los datos en diferentes tablas para tener una mejor perspectiva respecto al orden que los datos toman en funcion de la edad y el nivel educativo.
+
+```{r}
+frq(datos_proc$prom_ing_educ)
+
+sjt.xtab(datos_proc$educa, datos_proc$sexo_edad,
+         show.summary = T,
+         show.col.prc = T,
+         show.row.prc = T)
+```
+
+Como podemos apreciar en la primera tabla la educacion media posee un porcentaje de 49% de la poblacion total que ha terminado la educacion media, es decir, el otro 51% de los datos se encunetran repartidos entre los distintos niveles edicativos dejando como siguiente segmento predominante a la educacion basica con un 29% del total de la poblacion. El dato interesante que podemos observar en la primera tabla es que solo un 0,9% de la poblacion estudio y completo el postgrado y un 11,5% completo la educacion superior dejando solo un 9,7% de la poblacion con la educacion superior incompleta.
+
+### Tabla 1.2
+
+```{r}
+sjt.xtab(datos_proc$educa, datos_proc$sexo,
+         show.summary = T,
+         show.col.prc = T,
+         show.row.prc = T)
+```
+
+Asimismo en la segunda tabla la variable sexo y nivel educativo nos permiten ver con mayor facilidad la brecha educacional entre generos y lo sorprendente es que por supuesto existe una diferencia entre estos, más no representa una brecha considerable, pero la brecha existente pone a las mujeres como el genero con mayor porcentaje de niveles educativos completados a diferencia de los hombres que predominan en la educacion superior incompleta.
+
+### Grafico 2.1
+
+```{r}
+graph3 <- datos_proc %>% ggplot(aes(x = educa, fill = sexo)) + 
+  geom_bar() +
+  xlab("Nivel educativo") +
+  ylab("Cantidad") + 
+  labs(fill="Sexo")+
+  scale_fill_discrete(labels = c('Hombre','Mujer'))
+
+graph3
+
+```
+
+En las siguientes visulizaciones buscaremos evidenciar los datos correlacionados entre las variables promedio de ingreso y nivel educativo.
+
+### Tabla 1.4
+
+```{r}
+tabla = unique(datos_proc[, c("educa", "prom_ing_educ")])
+tabla
+
+```
+
+Como bien podemos apreciar en el grafico, las variables nivel educativo (educa) y promedio de sueldos (prom_ing_educ) los valores se presentan en aumento en funcion del nivel educativo, este patrón sugiere una correlación positiva entre la educación y el salario, es decir, a mayor nivel educativo, mayor es el ingreso salarial.
+
+Para visualizar los siguientes datos se ha construido un grafico de barras para esclarecer y facilitar la informacion.
+
+### Grafico 2.2 (Promedio ingreso y Nivel Educativo)
+
+```{r}
+ggplot(tabla, aes(x = prom_ing_educ, y = educa)) +
+  geom_col(fill = "skyblue") +
+  geom_text(aes(label = prom_ing_educ), hjust = 1.5, size = 3, color = "black") +
+  labs(x = "Promedio de Sueldos", y = "Nivel Educativo") +
+  theme_minimal()
+```
+
+## Resultados
+
+En este estudio, se observa una relación significativa entre el nivel educativo y el ingreso salarial. Los datos muestran consistentemente que a medida que aumenta el nivel educativo de un individuo, su ingreso salarial tiende a incrementarse.
+
+Es decir que podemos comprobar en funcion de esta base de datos que para el año 2006 la educacion y/o el nivel educativo si representaba una variable fundamental para la movilidad social, puesto que como se pudo apreciar el nivel educativo posee una relacion directa con el salario perceibido por las personas, por tanto la educacion si posee una importancia sustancial planteada en la hipotesis, en este caso en la region metropolitana aquellas personas que poseen un nivel educativo para el año 2006 si podian experimentar la ovilidad social y en este caso de manera ascendente, entre las clases sociales.
+
+La pregunta que queda en juego con esta investigacion es si acaso esta cualidad ascendente propia del nivel educativo se ha mantenido en el tiempo o si acaso esta ya ha perdido su valor respecto a la capacidad de jercer o no la movilidad social.
+
+En resumen, los datos recopilados sugieren que existe una relación positiva entre el nivel educativo y el ingreso salarial, lo que indica que la educacion para el año 2006 representaba una herramineta para ascender en la primaide social.

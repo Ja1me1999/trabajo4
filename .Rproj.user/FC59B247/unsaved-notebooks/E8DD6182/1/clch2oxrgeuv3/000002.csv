@@ -1,0 +1,6 @@
+"0","rm(list = ls())  # Cargar paquetes 
+pacman::p_load(tidyverse, sjmisc, sjPlot, ggplot2)  # Cargar datos ----------------------------------------------------------------- 
+data = readRDS(""output/data/datos_proc.rds"")  "
+"2","""""r}"""" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+"
